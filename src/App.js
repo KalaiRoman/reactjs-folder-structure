@@ -1,8 +1,9 @@
 import './App.css';
+import Routing from './routing/Routing';
 function App() {
   return (
     <div className="App">
-    welcome to kalai
+  <Routing/>
     </div>
   );
 }

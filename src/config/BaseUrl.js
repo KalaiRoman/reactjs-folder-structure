@@ -1,6 +1,5 @@
 import axios from "axios";
 
-
 const instanceBaseUrl=axios.create({
     baseURL:""
 })
@@ -11,7 +10,6 @@ axios.interceptors.request.use(function (config) {
   });
 
 axios.interceptors.response.use(function (response) {
-
     return response;
   }, function (error) {
    
