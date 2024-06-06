@@ -1,3 +1,4 @@
+import NotFound from "../../components/notfound/NotFound";
 import { Home, Login } from "../../pages/AllPages";
 
 export const PathRoutingLists=[
@@ -12,5 +13,11 @@ export const PathRoutingLists=[
         path:"/home",
         exact:false,
         component:<Home/>
+    },
+    {
+        name:"404notfound",
+        path:"/*",
+        exact:false,
+        component:<NotFound/>
     }
 ]

@@ -1,5 +1,4 @@
 import axios from "axios";
-
 const instanceBaseUrl=axios.create({
     baseURL:""
 })
@@ -15,7 +14,6 @@ axios.interceptors.request.use(
     return Promise.reject(error);
   }
 );
-
 axios.interceptors.response.use(
   function (response) {
     return response;
@@ -28,6 +26,5 @@ axios.interceptors.response.use(
     return Promise.reject(error);
   }
 );
-
 
   export default instanceBaseUrl;

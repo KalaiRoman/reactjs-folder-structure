@@ -6,6 +6,7 @@ function Login() {
   const dispatch=useDispatch();
   const state=useSelector((state)=>state?.login);
   const {data,listData}=UserData();
+
   useEffect(()=>{
     const data={
       name:"bala",
@@ -18,7 +19,7 @@ function Login() {
   return (
     <div>Login
 {data} <div>
-  {listData?.length}
+  {listData?.map((item,index)=>item)}
 </div>
 
     </div>
