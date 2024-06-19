@@ -1,17 +1,11 @@
+import useAxios from 'config/AxiosAnotherMethod';
 import React, { useEffect } from 'react'
-import useAxios from './../../config/AxiosAnotherMethod';
 
 function Home() {
-
-  
-
-
   const { response, error, loading, fetchData } = useAxios();
-
   const getData=async()=>{
     fetchData({ url: "/posts", method: "GET" });
   }
-
   useEffect(() => {
     getData();
   }, []);

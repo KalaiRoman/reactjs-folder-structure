@@ -3,8 +3,9 @@
     "baseUrl": "src",
     "paths": {
       "@components/*": ["components/*"],
-      "@services/*": ["services/*"],
-      "@config/*": ["config/*"]
+      "@services/*": ["services/*"]
+      // "@config/*": ["config/*"],
+      // "@/*": ["./*"]
     }
   },
   "include": ["src"]
