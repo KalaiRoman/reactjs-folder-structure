@@ -1,5 +1,6 @@
+import Formvalidation from "../../components/formvalidation/Formvalidation";
 import NotFound from "../../components/notfound/NotFound";
-import { Home, Login } from "../../pages/AllPages";
+import { BookingTickets, Home, Login } from "../../pages/AllPages";
 import Invoice from "../../reuseableComponents/InvoiceDownload";
 
 export const PathRoutingLists=[
@@ -14,6 +15,18 @@ export const PathRoutingLists=[
         path:"/home",
         exact:false,
         component:<Home/>
+    },
+    {
+        name:"BookingTickets",
+        path:"/bookingticket",
+        exact:false,
+        component:<BookingTickets/>
+    },
+    {
+        name:"Formvalidation",
+        path:"/form",
+        exact:false,
+        component:<Formvalidation/>
     },
     {
         name:"Invoice",

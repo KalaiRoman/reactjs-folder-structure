@@ -4,6 +4,8 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { Toaster } from 'react-hot-toast';
+import 'bootstrap/dist/css/bootstrap.css';
+import 'bootstrap/dist/js/bootstrap.js';
 import { Provider } from 'react-redux'
 import { BrowserRouter } from 'react-router-dom';
 import { store } from './redux/Store/Stores';
