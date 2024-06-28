@@ -10,6 +10,7 @@
     "axios": "^1.7.2",
     "bootstrap": "^5.3.3",
     "dotenv": "^16.4.5",
+    "env-cmd": "^10.1.0",
     "jspdf": "^2.5.1",
     "react": "^18.3.1",
     "react-bootstrap": "^2.10.3",
@@ -24,9 +25,9 @@
     "zod": "^3.23.8"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
+    "start": "env-cmd --file .env.development react-scripts start",
+    "build": "env-cmd --file .env.production react-scripts build",
+    "test": "env-cmd .env.development react-scripts test",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {

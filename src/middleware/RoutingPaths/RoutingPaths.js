@@ -1,4 +1,5 @@
 import Formvalidation from "../../components/formvalidation/Formvalidation";
+import ReuseableCode from "../../components/formvalidation/ReuseableCode";
 import NotFound from "../../components/notfound/NotFound";
 import { BookingTickets, Home, Login } from "../../pages/AllPages";
 import Invoice from "../../reuseableComponents/InvoiceDownload";
@@ -26,7 +27,7 @@ export const PathRoutingLists=[
         name:"Formvalidation",
         path:"/form",
         exact:false,
-        component:<Formvalidation/>
+        component:<ReuseableCode/>
     },
     {
         name:"Invoice",
