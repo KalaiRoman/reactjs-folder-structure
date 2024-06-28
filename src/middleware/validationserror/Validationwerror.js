@@ -24,4 +24,5 @@ export const inputAcceptimages={
 
 }
 
-
+// google api iontegation current location find
+export const GoogleLocationApiurl="https://opencagedata.com/dashboard#geocoding"
