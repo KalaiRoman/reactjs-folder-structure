@@ -1,8 +1,7 @@
 import Formvalidation from "../../components/formvalidation/Formvalidation";
 import ReuseableCode from "../../components/formvalidation/ReuseableCode";
 import NotFound from "../../components/notfound/NotFound";
-import { BookingTickets, Home, Login } from "../../pages/AllPages";
-import Invoice from "../../reuseableComponents/InvoiceDownload";
+import { BookingTickets, Home, Invoice, Login, QueryParams } from "../../pages/AllPages";
 
 export const PathRoutingLists=[
     {
@@ -34,6 +33,12 @@ export const PathRoutingLists=[
         path:"/invoice",
         exact:false,
         component:<Invoice/>
+    },
+    {
+        name:"Query",
+        path:"/query",
+        exact:false,
+        component:<QueryParams/>
     },
     {
         name:"404notfound",
