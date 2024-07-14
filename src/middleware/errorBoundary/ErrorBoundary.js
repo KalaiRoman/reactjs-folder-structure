@@ -19,7 +19,7 @@ class ErrorBoundary extends Component {
     {this.state.hasError}
 </div>
 <div>
-    omething Went Wrong!
+    Something Went Wrong!
 </div>
 
         </div>

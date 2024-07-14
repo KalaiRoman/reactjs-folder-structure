@@ -2,7 +2,8 @@ import React, { useEffect } from 'react'
 import useAxios from '../../config/AxiosAnotherMethod';
 import { EnvLables } from './../../middleware/EnvDatas/EnvLabals';
 import GoogleLocation from '../../middleware/googlelocation/GoogleLocation';
-function Home() {
+import Hoc from './../../Hoc/Hoc';
+function Home({value}) {
   const { response, error, loading, fetchData } = useAxios();
 
   const {lan,lon}=GoogleLocation();
@@ -16,7 +17,7 @@ function Home() {
   console.log(lan,'l')
 
   return (
-    <div>Home {lan}  {loading?"...Loading":null}
+    <div>Home {value?.name} {lan}  {loading?"...Loading":null}
     {EnvLables.BASE_URL_DEVELOPMENT}
     <div>
       {/* {response?.map((item,index)=>{
@@ -34,4 +35,4 @@ function Home() {
   )
 }
 
-export default Home
+export default Hoc(Home)
