@@ -10,15 +10,18 @@ import { Provider } from 'react-redux'
 import { BrowserRouter } from 'react-router-dom';
 import { store } from './redux/Store/Stores';
 import ErrorBoundary from './middleware/errorBoundary/ErrorBoundary';
+import ProvideContext from './contextapi/ContextApi';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <Provider store={store}>
     <ErrorBoundary>
  <BrowserRouter>
+ <ProvideContext>
  <Toaster
  position="bottom-right"
  reverseOrder={false}/>
     <App />
+    </ProvideContext>
   </BrowserRouter>
   </ErrorBoundary>
   </Provider>

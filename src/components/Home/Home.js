@@ -1,10 +1,15 @@
-import React, { useEffect } from 'react'
+import React, { useContext, useEffect } from 'react'
 import useAxios from '../../config/AxiosAnotherMethod';
 import { EnvLables } from './../../middleware/EnvDatas/EnvLabals';
 import GoogleLocation from '../../middleware/googlelocation/GoogleLocation';
 import Hoc from './../../Hoc/Hoc';
+import { CreateContextApi } from '../../contextapi/ContextApi';
 function Home({value}) {
   const { response, error, loading, fetchData } = useAxios();
+
+  const {name}=useContext(CreateContextApi)
+
+  console.log(name,'name')
 
   const {lan,lon}=GoogleLocation();
   const getData=async()=>{
