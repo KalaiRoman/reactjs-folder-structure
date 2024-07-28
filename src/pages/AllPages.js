@@ -5,4 +5,5 @@ import BookingTickets from './../components/bookingticket/BookingTickets';
 import QueryParams from './../components/queryparams/QueryParams';
 import Invoice from './../reuseableComponents/InvoiceDownload';
 import Learning from './../learning/Learning';
-export {Login,Home,BookingTickets,QueryParams,Invoice,Learning}
+import Calculator from './../components/Calculator/Calculator';
+export {Login,Home,BookingTickets,QueryParams,Invoice,Learning,Calculator}
