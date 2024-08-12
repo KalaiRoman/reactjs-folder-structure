@@ -1,7 +1,7 @@
 import Formvalidation from "../../components/formvalidation/Formvalidation";
 import ReuseableCode from "../../components/formvalidation/ReuseableCode";
 import NotFound from "../../components/notfound/NotFound";
-import { BookingTickets, Calculator, Home, Invoice, Learning, Login, QueryParams } from "../../pages/AllPages";
+import { BookingTickets, Calculator, Home, Invoice, Learning, Login, QueryParams, Todo } from "../../pages/AllPages";
 
 export const PathRoutingLists=[
     {
@@ -51,6 +51,12 @@ export const PathRoutingLists=[
         path:"/cal",
         exact:false,
         component:<Calculator/>
+    },
+    {
+        name:"todo",
+        path:"/to",
+        exact:false,
+        component:<Todo/>
     },
     {
         name:"404notfound",
